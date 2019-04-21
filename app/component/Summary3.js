@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Summary3 = ({ ingredients=0, steps=0, name='[recipe]' }) => {
 	return <div>
 		<h1>{name}</h1>
