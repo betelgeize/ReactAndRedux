@@ -8,6 +8,7 @@ import AddColorForm2 from './AddColorForm2'
 import StarRating from './StarRating'
 import App from './App'
 import MemberList from "./MemberList";
+/*import Clock from "./Clock"*/
 
 const logColor = (title, color) => {
 	console.log(`New Color: ${title} | ${color}`);
@@ -17,12 +18,15 @@ const logColor = (title, color) => {
 
 const Menu = ({recipes}) =>
 	<article>
+		{/*<Clock />*/}
 		<MemberList />
 		<App />
+		<hr />
 		<header>
 			<h1>Delicious Recipes</h1>
 		</header>
 		<StarRating/>
+		<hr />
 		<AddColorForm onNewColor={logColor} />
 		<AddColorForm2 onNewColor={logColor} />
 		<div className="recipes">

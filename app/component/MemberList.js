@@ -1,3 +1,5 @@
+import {Component} from 'react'
+
 const getFakeMembers = count => new Promise((resolves, rejects) => {
 	const api = `https://api.randomuser.me/?nat=US&results=${count}`
 	const request = new XMLHttpRequest()
